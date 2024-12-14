@@ -1,7 +1,7 @@
 import React from 'react';
 import config from '../config/index.json';
 
-export default function Features(props, ref) {
+export default function Features({ ref }) {
 	const { features } = config;
 	const { title, subtitle, description, items: featuresList } = features;
 	return (

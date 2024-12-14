@@ -5,12 +5,12 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 import config from '../config/index.json';
 import ScrollLink from '@/components/ScrollLink';
 
-export default function Header(props) {
+export default function Header({ refs }) {
 	const { navigation, company, callToAction } = config;
 	const { name: companyName, logo } = company;
 	const getLinks = (type) => {
 		return navigation.map((item) => {
-			const ref = props.refs[item.href];
+			const ref = refs[item.href];
 			return (<ScrollLink
 				refElement={ref}
 				key={item.href}
