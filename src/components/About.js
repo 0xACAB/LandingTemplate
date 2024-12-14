@@ -1,8 +1,8 @@
-import React, { forwardRef } from 'react';
+import React from 'react';
 
 import config from '../config/index.json';
 
-const About = forwardRef((props, ref) => {
+export default function About (props, ref) {
     const { socialMedia, sections } = config.about;
 
     return (
@@ -75,5 +75,4 @@ const About = forwardRef((props, ref) => {
             </div>
         </div>
     );
-});
-export default About;
+}

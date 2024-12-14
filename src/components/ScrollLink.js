@@ -1,9 +1,7 @@
 'use client';
 import React, { useCallback } from 'react';
 
-const ScrollLink = (props) => {
-    //const myRef = useRef<Element>(null);
-    // run this function from an event handler or pass it to useEffect to execute scroll
+export default function ScrollLink(props) {
     const executeScroll = useCallback(() => {
         if (props.refElement.current) {
             props.refElement.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -22,6 +20,4 @@ const ScrollLink = (props) => {
                 {props.name}
             </a>
         </>);
-};
-
-export default ScrollLink;
+}

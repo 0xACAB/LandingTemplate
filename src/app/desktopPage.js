@@ -8,7 +8,7 @@ import Pricing from '@/components/Pricing';
 import About from '@/components/About';
 import config from '@/config/index.json';
 
-const DesktopPage = () => {
+export default function DesktopPage() {
     const mobile = false;
     const { navigation } = config;
     const refs = {};
@@ -31,4 +31,3 @@ const DesktopPage = () => {
         </div>
     );
 };
-export default DesktopPage;

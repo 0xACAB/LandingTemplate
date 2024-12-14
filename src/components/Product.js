@@ -1,9 +1,9 @@
-import React, { forwardRef } from 'react';
+import React from 'react';
 
 import config from '../config/index.json';
 import Divider from './Divider';
 
-const Product = forwardRef((props, ref) => {
+export default function Product(props, ref) {
 	const { product, company } = config;
 	const [firstItem, secondItem] = product.items;
 
@@ -38,11 +38,11 @@ const Product = forwardRef((props, ref) => {
 						<p className={`text-gray-600`}>{firstItem?.description}</p>
 					</div>
 					<div className={`flex flex-row justify-center items-center w-full sm:w-1/2 p-6`}>
-					    <img
-					      className="h-6/6"
-					      src={company?.logo}
-					      alt={firstItem?.title}
-					    />
+						<img
+							className="h-6/6"
+							src={company?.logo}
+							alt={firstItem?.title}
+						/>
 					</div>
 				</div>
 				<div className={`flex flex-wrap flex-col-reverse sm:flex-row`}>
@@ -67,6 +67,4 @@ const Product = forwardRef((props, ref) => {
 			</div>
 		</section>
 	);
-});
-
-export default Product;
+}

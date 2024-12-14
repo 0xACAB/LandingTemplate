@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Divider = ({ width = 'w-64' }) => {
+export default function Divider ({ width = 'w-64' }) {
     return (
         <div className={`w-full mb-4`}>
             <div
@@ -8,6 +8,4 @@ const Divider = ({ width = 'w-64' }) => {
             ></div>
         </div>
     );
-};
-
-export default Divider;
+}

@@ -1,8 +1,8 @@
-import React, { forwardRef } from 'react';
+import React from 'react';
 
 import config from '../config/index.json';
 
-const Pricing = forwardRef((props, ref) => {
+export default function Pricing(props, ref) {
     const { pricing } = config;
     const { items, title } = pricing;
     const [firstPlan, secondPlan, thirdPlan] = items;
@@ -121,6 +121,4 @@ const Pricing = forwardRef((props, ref) => {
             </div>
         </section>
     );
-});
-
-export default Pricing;
+}

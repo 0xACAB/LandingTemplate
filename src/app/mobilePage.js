@@ -8,7 +8,7 @@ import Product from '@/components/Product';
 import Features from '@/components/Features';
 import Pricing from '@/components/Pricing';
 
-const MobilePage = () => {
+export default function MobilePage() {
     const mobile = true;
     const { navigation } = config;
     const refs = {};
@@ -30,4 +30,3 @@ const MobilePage = () => {
         </div>
     );
 };
-export default MobilePage;
