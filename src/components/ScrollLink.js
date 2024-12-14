@@ -6,7 +6,7 @@ export default function ScrollLink({ refElement, type, name }) {
 		if (refElement.current) {
 			refElement.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
 		}
-	}, [refElement]);
+	}, []);
 	return (
 		<>
 			<a
