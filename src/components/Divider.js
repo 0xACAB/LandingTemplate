@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function Divider ({ width = 'w-64' }) {
     return (
         <div className={`w-full mb-4`}>

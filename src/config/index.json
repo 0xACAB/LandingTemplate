@@ -1,6 +1,6 @@
 {
   "company": {
-    "name": "Landing page",
+    "name": "@xTranscendence",
     "logo": "/assets/images/logo.png"
   },
   "navigation": [
@@ -22,26 +22,18 @@
       "href": "about"
     }
   ],
-  "callToAction": {
-    "text": "Хочу продукт!",
-    "href": "#"
-  },
   "mainHero": {
     "title": "Целевая страница",
     "mobileTitle": "Мобильная версия целевой страницы",
     "subtitle": "Landing page",
     "description": "Веб-страница, основной задачей которой является сбор контактных данных целевой аудитории",
     "primaryAction": {
-      "text": "Отдать данные",
+      "text": "Начать целевое действие",
       "href": "#"
-    },
-    "secondaryAction": {
-      "text": "Написать нам",
-      "href": "mailto:mathmeditation@gmail.com"
     }
   },
   "product": {
-    "title": "Целевая страница",
+    "title": "Некоторый продукт",
     "items": [
       {
         "title": "Эффективность",

@@ -1,4 +1,3 @@
-import React from 'react';
 import DesktopPage from './desktopPage';
 import MobilePage from './mobilePage';
 import isMobileDevice from '@/lib/responsive';

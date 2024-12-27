@@ -1,5 +1,5 @@
 'use client';
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import MainHero from '@/components/MainHero';
 import Header from '@/components/Header';
 import About from '@/components/About';
@@ -8,8 +8,7 @@ import Product from '@/components/Product';
 import Features from '@/components/Features';
 import Pricing from '@/components/Pricing';
 
-export default function MobilePage() {
-    const mobile = true;
+export default function MobilePage({mobile}) {
     const { navigation } = config;
     const refs = {};
     navigation.forEach((item) => {
